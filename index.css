@@ -1,5 +1,14 @@
 body{
     background: #0d0d12;
+    /* display: grid;
+    align-self: center; */
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5vh;
+}
+
+main{
+    padding: 5vh;
+    width: 90%;
 }
 .bar{
     display: flex;
@@ -8,42 +17,108 @@ body{
     color: #01dd3a;
     border-style: double;
     border-color: #262d32;
-    width: 90%;
 }
-.bar img{
+#shild{
     background: #01dd3a;
     border-radius: 100%;
+    height: 30px;
+    transition: transform .7s ease-in-out;
+}
+#shild:hover{
+    transform: rotate(180deg);
 }
 .status{
     display: flex;
+    justify-content: center;
     align-content: center;
-    background: red;
+    background: #00290a;
+    border-style: solid;
     border-color: #01dd3a;
     border-radius: 100%;
+    color: #43bc63 ;
+    width: 25vh;
+}
+.status img{
+    height: 20px;
+}
+#monitor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+}
+#monitor:hover{
+    border-color: #01dd3a;
+}
+#info{
+    color: #60606d;
+    font-size: smaller;
+}
+#info span{
+    color: white;
+    font-size: large;
 }
 button{
     background: #15111d;
     color: white;
-     border-style: double;
+    border-style: double;
     border-color: #262d32;
     border-radius: 20px;
 }
 button img{
-    background-color: #01dd3a;
+    /* background-color: #01dd3a; */
+    height: 5%;
+    width: 15px
+}
+button:hover{
+    border-style: double;
+    border-top: none;
+    border-color: #01dd3a;
 }
 .card{
-     background: #15111d;
+    background: #15111d;
     color: white;
     border-style: double;
     border-color: #262d32;
     width: 30vh;
     height: 15vh;
     border-radius: 30px;
+    
 }
 .process{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    gap: 1vh; 
+    display: flex;
+    justify-content: space-around;
+    /* grid-template-columns: 15% 15% 15% 15%; */
+    /* padding: 1vh; */
+    /* padding-right: 5%; */
+    gap: 2vh; 
+    
+}
+.card{
+    /* display: grid; */
+    /* background: green; */
+    /* flex-direction: row; */
+    justify-content: space-between;
+    border-left: #01dd3a;
+    border-style: groove;
+}
+.line{
+    border-radius: ;
+}
+.alert{
+    display: flex;
+    padding: 1vh;
+    justify-content: space-between;
+}
+.alert span{
+    font-size: xx-small;
+    border-style: groove;
+    border-color: red;
+    height: 3vh;
+    background: #b72e52;;
+}
+.alert p{
+    font-size: x-small;
 }
 .red_button{
     background: #221018;
@@ -55,3 +130,99 @@ button img{
 footer{
     width: 100%;
 }
+
+li{
+    /* display: inline; */
+    animation: colorChinch 4s ease-in-out 3s infinite;
+}
+@keyframes colorChinch {
+    50%{
+        color: gray;
+    }
+}
+
+
+.card:nth-child(even){
+    /* border-style: groove; */
+    border-left: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+	overflow: hidden;
+	height: 100%;
+	background: radial-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 1)),
+		linear-gradient(90deg, dimgrey 1px, transparent 1px),
+		linear-gradient(dimgrey 1px, grey 1px);
+	background-size: 100%, 2px 1px, 1px 2px;
+}
+
+.radar {
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	margin: -117px;
+	width: 248px;
+	height: 248px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.5),
+		inset 0 0 0 1px hsla(0, 0%, 100%, 0.15);
+	background: repeating-radial-gradient(
+			transparent 0 23px,
+			#287a33 24px 26px,
+			#0000 27px
+		),
+		linear-gradient(transparent 49.75%, #0e4c42 0 50.25%, transparent 0) 50%
+			no-repeat,
+		linear-gradient(90deg, transparent 49.75%, #0e4c42 0 50.25%, transparent 0)
+			50% no-repeat,
+		linear-gradient(#333, #111);
+	background-size: 100%, 218px 218px, 218px 218px, 100%;
+}
+.sweep {
+	box-sizing: border-box;
+	top: 16px;
+	left: 16px;
+	border-right: solid 1px hsla(145, 50%, 40%, 0.3);
+	width: 108px;
+	height: 108px;
+	border-radius: 100% 0 0 0;
+	transform-origin: 100% 100%;
+	background: linear-gradient(
+		50deg,
+		rgba(34, 34, 34, 0) 56%,
+		hsla(145, 50%, 40%, 1)
+	);
+	animation: sweep 5s infinite linear;
+}
+@keyframes sweep {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+
+
+
+
