@@ -5,15 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIGINT OPS</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 </head>
 <body>
     <nav class="bar">
-        <img src="pic/shield.svg" alt="shield">
+        <img id="shild" src="pic/shield.svg" alt="shield">
         <p>SIGINT OPS</p>
-        <div class="status"><li>SECURE * ONLINE</li></div>
+        <div class="status">
+            <li></li>
+            <p>SECURE <img src="pic/greendot.svg" alt=""> ONLINE</p></div>
     </nav>
     <main>
-        <header id="monitor" class="bar">
+        <section id="monitor" class="bar">
             <div class="radar">
                  <div class='sweep'></div>
             </div>
@@ -23,7 +26,7 @@
                 <span>07</span>
                 <p>PRIORITY ALERTS</p>
             </div>
-        </header>
+        </section>
         <div class="buttons">
         <button><img src="pic/zap.svg" alt="zap">New Brief</button>
         <button><img src="pic/code.svg" alt="code">Decode</button>
@@ -31,16 +34,20 @@
     </div>
     <section class="process" >
         <div class="card" id="critical">
-            <div class="alert"><p>CRITICAL</p><p>In Progress</p></div>
+            <div class="alert"><span>CRITICAL</span><p>In Progress</p></div>
             <h6>Operation Nightfall</h6>
             <div class="progrss">
-                <div class="line"></div>
+                <div class="line">
+                      <div class="w3-light-grey w3-round-xlarge">
+    <div class="w3-container w3-green w3-round-xlarge" style="width:65%"></div>
+  </div>
+</div>
                 <p>65%</p>
             </div>           
         </div>
         <div class="card" id="high">
             <div class="alert"><p>HIGH</p><p>Analyzing</p></div>
-            <h6>Signail INtercept Alpha</h6>
+            <h6>Signail Intercept Alpha</h6>
             <div class="progrss">
                 <div class="line"></div>
                 <p>40%</p>
@@ -67,9 +74,9 @@
     </main>
     <footer class="bar">
         <div id="empty space"></div>
-        <nav class="icons"><img src="pic/activity.svg" alt="dashboard"> Dashboard</nav>
-        <nav class="icons"><img src="pic/radio.svg" alt="feed">Feed</nav>
-        <nav class="icons"><img src="pic/file-text.svg" alt=brief"">Brief</nav>
+        <nav class="icons"><img src="pic/activity.svg" alt="dashboard"><br> Dashboard</nav>
+        <nav class="icons"><img src="pic/radio.svg" alt="feed"><br>Feed</nav>
+        <nav class="icons"><img src="pic/file-text.svg" alt=brief""><br>Brief</nav>
         <nav class="bar">?</nav>
     </footer>
     
